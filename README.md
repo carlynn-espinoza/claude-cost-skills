@@ -15,6 +15,40 @@ Most wasted spend isn't the model being expensive — it's **doing expensive wor
 
 `check-cost` makes that ordering a habit. `token-efficiency-check` applies the same instinct to the automations you build, so a bad cadence or an oversized model doesn't quietly bill you every hour.
 
+## In action
+
+**`check-cost`** reorders work so you never pay for output you'll throw away:
+
+```text
+> Generate this week's 3 blog drafts.
+
+check-cost ─ before writing anything
+  Expensive step : 3 full article generations
+  Cheap gate     : compare the 3 proposed topics to existing posts first
+  Result         : queried 42 existing titles → 1 topic overlaps a live
+                   post → swapped it for a fresh angle
+
+  Writing 2 net-new articles instead of 3. One generation saved,
+  zero drafts thrown away.
+```
+
+**`token-efficiency-check`** is a PASS/FLAG gate before you schedule automation:
+
+```text
+> Schedule an agent to summarize new leads every hour.
+
+token-efficiency-check ─ hourly lead-summary agent
+  1. Redundant runs   PASS
+  2. Model sizing     FLAG  summarizing 1–2 leads doesn't need a frontier
+                            model — use the cheapest tier that works
+  3. Scope / context  PASS
+  4. Cadence          FLAG  leads arrive a few times a week, not hourly —
+                            run daily, not 24×/day
+
+  Verdict: fixes needed → cheapest model + daily cadence.
+           Same result, a fraction of the spend.
+```
+
 ## Install
 
 ```
