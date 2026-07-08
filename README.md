@@ -1,5 +1,7 @@
 # claude-cost-skills
 
+> By [Carlynn Espinoza](https://github.com/carlynn-espinoza) · MIT licensed
+
 Two small [Claude Code](https://claude.com/claude-code) skills that keep the cost of a task as close to $0 as possible **without losing the result**. They're a bundle because they solve the same problem at two different moments: one while you're *doing* work, one when you're *building automation*.
 
 | Skill | When it fires | What it does |
@@ -44,6 +46,12 @@ A short PASS/FLAG review across four axes before you build or schedule an automa
 
 If everything passes, it says so in one line and gets out of the way. If something flags, it stops and hands you a concrete fix.
 
+## Author
+
+**Carlynn Espinoza** — [github.com/carlynn-espinoza](https://github.com/carlynn-espinoza)
+
+Issues, ideas, and PRs welcome. If you build on these or ship your own cost-discipline skills, I'd love to see them.
+
 ## License
 
-MIT © Carlynn Espinoza
+MIT © 2026 Carlynn Espinoza

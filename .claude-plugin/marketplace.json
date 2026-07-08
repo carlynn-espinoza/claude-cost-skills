@@ -2,7 +2,8 @@
   "name": "claude-cost-skills",
   "description": "Cost-discipline skills for Claude Code — spend as little as possible for the same result.",
   "owner": {
-    "name": "Carlynn Espinoza"
+    "name": "Carlynn Espinoza",
+    "url": "https://github.com/carlynn-espinoza"
   },
   "plugins": [
     {
@@ -11,7 +12,8 @@
       "version": "1.0.0",
       "source": "./",
       "author": {
-        "name": "Carlynn Espinoza"
+        "name": "Carlynn Espinoza",
+        "url": "https://github.com/carlynn-espinoza"
       }
     }
   ]

@@ -3,7 +3,8 @@
   "description": "Two cost-discipline skills for Claude Code: token-efficiency-check (design-time gate for agents/crons/loops) and check-cost (cheapest-path-first while working).",
   "version": "1.0.0",
   "author": {
-    "name": "Carlynn Espinoza"
+    "name": "Carlynn Espinoza",
+    "url": "https://github.com/carlynn-espinoza"
   },
   "homepage": "https://github.com/carlynn-espinoza/claude-cost-skills",
   "repository": "https://github.com/carlynn-espinoza/claude-cost-skills",
